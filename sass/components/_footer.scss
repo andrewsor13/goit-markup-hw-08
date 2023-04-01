@@ -3,7 +3,6 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  height: 251px;
   align-items: center;
 }
 
@@ -12,6 +11,13 @@
   flex-direction: row;
   gap: 70px;
   align-items: baseline;
+}
+
+@media screen and (max-width: 480px) {
+  .footer-items {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .footer-block {
@@ -144,5 +150,12 @@
     padding: 0px;
     gap: 25px;
     cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .newsletter-form {
+    flex-direction: column;
+    align-items: center;
   }
 }

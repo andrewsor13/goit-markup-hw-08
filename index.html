@@ -375,7 +375,7 @@
       <div class="container">
         <div class="section-block">
           <h2 class="section-block__title">Regular Customers</h2>
-          <ul class="grid">
+          <ul class="grid customers--grid">
             <li class="grid__item grid__item--border grid--six">
               <svg class="customers-icons" width="106px" height="60px">
                 <use href="./images/icons.svg#icon-logo1"></use>
@@ -413,41 +413,50 @@
   </main>
   <div class="menu-container js-menu-container" id="mobile-menu">
     <button class="menu-toggle js-close-menu">
-      <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+      <svg fill="black" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
         <path fill-rule="evenodd"
           d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
           clip-rule="evenodd"></path>
       </svg>
     </button>
-    <nav class="header-navigation">
-      <ul class="navigation undecorated-list navigation--menu">
+    <div class="menu-navigation">
+      <nav class="header-navigation">
+        <ul class="navigation undecorated-list navigation--menu">
+          <li class="navigation__item">
+            <a class="navigation__item__elements navgitaion__item--mobile" href="index.html">Studio</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__item__elements navgitaion__item--mobile" href="portofolio.html">Portofolio</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__item__elements navgitaion__item--mobile" href="contacts.html">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="undecorated-list navigation navigation--right navigation--contact">
         <li class="navigation__item">
-          <a class="navigation__item__elements" href="index.html">Studio</a>
+          <a class="contact-list" href="mailto:info@devstudio.com">
+            <svg class="navigation__item__image" width="16px" height="12px">
+              <use href="./images/icons.svg#icon-envelope"></use>
+            </svg>info@devstudio.com
+          </a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__item__elements" href="portofolio.html">Portofolio</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__item__elements" href="contacts.html">Contacts</a>
+          <a class="contact-list" href="tel:+12127724150">
+            <svg class="navigation__item__image" width="10px" height="16px">
+              <use href="./images/icons.svg#icon-smartphone"></use>
+            </svg>
+            +1 212-772-4150</a>
         </li>
       </ul>
-    </nav>
-    <ul class="undecorated-list navigation navigation--right">
-      <li class="navigation__item">
-        <a class="contact-list" href="mailto:info@devstudio.com">
-          <svg class="navigation__item__image" width="16px" height="12px">
-            <use href="./images/icons.svg#icon-envelope"></use>
-          </svg>info@devstudio.com
-        </a>
-      </li>
-      <li class="navigation__item">
-        <a class="contact-list" href="tel:+12127724150">
-          <svg class="navigation__item__image" width="10px" height="16px">
-            <use href="./images/icons.svg#icon-smartphone"></use>
-          </svg>
-          +1 212-772-4150</a>
-      </li>
-    </ul>
+
+      <ul>
+        <li><a>Instagram</a></li>
+        <li><a></a></li>
+        <li><a></a></li>
+        <li><a></a></li>
+      </ul>
+    </div>
   </div>
   <!--Footer-->
   <footer class="page-footer">

@@ -14,6 +14,11 @@
   flex-direction: column;
   gap: 30px;
 }
+@media screen and (max-width: 480px) {
+  .team-member {
+    align-items: center;
+  }
+}
 
 .member-description {
   display: flex;

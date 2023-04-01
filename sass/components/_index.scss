@@ -17,14 +17,14 @@
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   .hero-section {
     width: 360px;
     margin: 0 auto;
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   .hero-section__title {
     font-size: 26px;
     width: 360px;
@@ -48,7 +48,7 @@
     width: 768px;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   .section--hero {
     width: 480px;
   }

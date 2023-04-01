@@ -71,8 +71,8 @@
 
 .menu-container .menu-toggle {
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 21px;
+  right: 25px;
   color: #fff;
 }
 
@@ -87,4 +87,23 @@
   padding: 10px;
   color: #fff;
   text-decoration: none;
+}
+
+.menu-navigation {
+  display: flex;
+  flex-direction: column;
+  height: 796px;
+}
+
+.navigation--contact {
+  flex-direction: column;
+  align-items: normal;
+  justify-content: flex-start;
+}
+
+.navgitaion__item--mobile {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
 }
