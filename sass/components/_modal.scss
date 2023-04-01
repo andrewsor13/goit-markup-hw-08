@@ -32,6 +32,12 @@
   }
 }
 
+@media screen and (max-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
+
 .close {
   float: right;
   border: 1px solid rgba(0, 0, 0, 0.1);
