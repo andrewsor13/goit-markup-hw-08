@@ -26,3 +26,8 @@
     color: $main-backgroundcolor;
   }
 }
+
+.grid--filter-section {
+  gap: 8px;
+  justify-content: flex-start;
+}

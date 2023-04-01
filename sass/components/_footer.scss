@@ -9,15 +9,15 @@
 
 .footer-items {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
   gap: 70px;
-  align-items: baseline;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 1200px) {
   .footer-items {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    align-items: baseline;
   }
 }
 
@@ -25,6 +25,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  align-items: center;
 
   &__title {
     color: $main-backgroundcolor;
@@ -36,9 +37,9 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 1200px) {
   .footer-block {
-    align-items: center;
+    align-items: flex-start;
   }
 }
 
@@ -83,12 +84,12 @@
   display: flex;
   gap: 12px;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 1200px) {
   .grid--footer {
-    align-items: center;
+    align-items: flex-start;
   }
 }
 
@@ -119,15 +120,16 @@
 
 .newsletter-form {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 12px;
+  align-items: center;
 
   &__email {
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     height: 50px;
-    width: 358px;
+    width: 450px;
     background: transparent;
     padding-left: 16px;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -166,15 +168,8 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 1200px) {
   .newsletter-form {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .newsletter-form__email {
-    width: 420px;
+    flex-direction: row;
   }
 }

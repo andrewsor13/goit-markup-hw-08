@@ -12,9 +12,14 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+.customers--grid .grid__item {
+  flex-basis: calc((100% - 2 * 30px) / 2);
+  position: relative;
+}
+
+@media screen and (min-width: 1200px) {
   .customers--grid .grid__item {
-    flex-basis: calc((100% - 2 * 30px) / 2);
+    flex-basis: calc((100% - 6 * 30px) / 6);
     position: relative;
   }
 }
@@ -22,15 +27,24 @@
 .customers-icons {
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: absolute;
+  left: 52px;
 
   &:hover {
     fill: $logo-color;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 768px) {
+  .customers-icons {
+    left: 126px;
+    top: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .customers-icons {
     position: absolute;
-    left: 52px;
+    left: 32px;
   }
 }

@@ -4,6 +4,12 @@
   border-radius: 0px 0px 4px 4px;
 }
 
+@media screen and (min-width: 768px) {
+  .grid--our-team {
+    align-items: center;
+  }
+}
+
 .section--our-team {
   background: #f5f4fa;
   width: 100%;
@@ -14,7 +20,7 @@
   flex-direction: column;
   gap: 30px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .team-member {
     align-items: center;
   }

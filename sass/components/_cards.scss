@@ -68,3 +68,8 @@
     margin-left: 24px;
   }
 }
+
+.grid--cards {
+  flex-basis: calc(100% - 30px);
+  align-items: center;
+}

@@ -6,28 +6,21 @@
 
   &__title {
     font-weight: 900;
-    font-size: 44px;
+    font-size: 26px;
     line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: $main-backgroundcolor;
-    width: 696px;
+    width: 360px;
     margin-bottom: 30px;
   }
 }
 
-@media screen and (max-width: 480px) {
-  .hero-section {
-    width: 360px;
-    margin: 0 auto;
-  }
-}
-
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 1200px) {
   .hero-section__title {
-    font-size: 26px;
-    width: 360px;
+    font-size: 44px;
+    width: 696px;
   }
 }
 
@@ -43,14 +36,15 @@
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/people_at_desk.jpg");
 }
 
-@media screen and (min-width: 767px) and (max-width: 1200px) {
+@media screen and (min-width: 767px) {
   .section--hero {
     width: 768px;
   }
 }
-@media screen and (max-width: 480px) {
+
+@media screen and (min-width: 1200px) {
   .section--hero {
-    width: 480px;
+    width: 100%;
   }
 }
 
@@ -67,4 +61,12 @@
   letter-spacing: 0.06em;
   color: $main-backgroundcolor;
   padding: 10px 19px 10px 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .grid__item {
+    flex-basis: calc(100% / 4 - 30px);
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
 }

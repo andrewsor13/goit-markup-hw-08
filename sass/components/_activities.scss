@@ -6,7 +6,7 @@
   justify-content: center;
 
   &__item {
-    flex-basis: calc(100% / 4 - 30px);
+    flex-basis: calc(100%);
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -14,50 +14,43 @@
   }
 }
 
-@media screen and (max-width: 480px) {
-  .grid__item {
-    flex-basis: calc(100%);
-  }
-}
-
-@media screen and (min-width: 767px) and (max-width: 1200px) {
+@media screen and (min-width: 767px) {
   .grid__item {
     flex-basis: calc((100% - 2 * 30px) / 2);
     align-items: flex-start;
+    justify-content: flex-start;
   }
-}
-
-.grid--filter-section {
-  gap: 8px;
-  justify-content: center;
 }
 
 .activities-icons {
   background-color: #f5f4fa;
-  width: 270px;
+  width: 480px;
   height: 120px;
   border-radius: 4px;
+  position: relative;
 
   &__image {
     fill: currentColor;
+    position: absolute;
+    left: 92px;
   }
 }
 
-@media screen and (min-width: 767px) and (max-width: 1200px) {
+@media screen and (min-width: 767px) {
   .activities-icons__image {
     position: absolute;
     left: 44px;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 1200px) {
   .activities-icons__image {
     position: absolute;
-    left: 92px;
+    left: 10px;
   }
 }
 
-@media screen and (min-width: 767px) and (max-width: 1200px) {
+@media screen and (min-width: 767px) {
   .activities-icons {
     width: 354px;
     height: 120px;
@@ -65,9 +58,9 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 1200px) {
   .activities-icons {
-    width: 450px;
+    width: 270px;
     height: 120px;
     position: relative;
   }
@@ -88,6 +81,7 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $main-text-color;
+    align-items: center;
   }
 
   &__description {
@@ -96,11 +90,5 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: $secondary-text-color;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .activities-description__title {
-    align-items: center;
   }
 }
