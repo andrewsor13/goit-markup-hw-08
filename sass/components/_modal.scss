@@ -1,0 +1,180 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 250ms linear, transform 1s linear;
+  z-index: 100;
+}
+
+.modal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  height: 581px;
+  background-color: $main-backgroundcolor;
+  box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
+  border-radius: 4px;
+  padding: 40px;
+
+  &__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $main-text-color;
+    margin: 0px 0px 12px 0px;
+  }
+}
+
+.close {
+  float: right;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 8px;
+  width: 30px;
+  height: 30px;
+  background: $main-backgroundcolor;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.is-hidden {
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.information-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: $secondary-text-color;
+    position: relative;
+
+    &__input {
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      border-radius: 4px;
+      height: 40px;
+      outline: none;
+      padding-left: 42px;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__image {
+      position: absolute;
+      top: 50%;
+      left: 15px;
+
+      &:focus {
+        fill: $logo-color;
+      }
+    }
+  }
+}
+
+.form-data {
+  &:focus {
+    border: 1px solid $logo-color;
+  }
+  &:focus + svg {
+    fill: $logo-color;
+  }
+}
+
+.comments {
+  height: 120px;
+  padding: 12px 16px;
+  resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.terms-and-conditions {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: $secondary-text-color;
+  align-self: center;
+  display: flex;
+  margin-top: 10px;
+  position: relative;
+
+  &__link {
+    color: $logo-color;
+  }
+
+  &__checkbox {
+    margin-right: 7px;
+    display: none;
+  }
+
+  &__checkbox:checked + .replace-checkbox {
+    background-color: $logo-color;
+    border-color: $logo-color;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__checkbox:checked + .replace-checkbox + svg {
+    opacity: 1;
+  }
+
+  &__new-chechmark {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    fill: $main-backgroundcolor;
+    opacity: 0;
+    left: 2.5px;
+    top: 2.5px;
+  }
+}
+
+.replace-checkbox {
+  width: 16px;
+  height: 16px;
+  border: 2px solid black;
+  border-radius: 2px;
+  margin-right: 8px;
+}
+.submit-button {
+  background: $logo-color;
+  border-radius: 4px;
+  border-color: $logo-color;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: $main-backgroundcolor;
+  height: 50px;
+  justify-content: center;
+  margin-top: 30px;
+  width: 200px;
+  align-self: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
