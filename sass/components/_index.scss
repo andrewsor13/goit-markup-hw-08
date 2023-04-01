@@ -28,7 +28,6 @@
   background: #2f303a;
   box-sizing: border-box;
   display: flex;
-  height: 600px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -44,7 +43,8 @@
 
 @media screen and (min-width: 1200px) {
   .section--hero {
-    width: 100%;
+    width: 480px;
+    height: 600px;
   }
 }
 
