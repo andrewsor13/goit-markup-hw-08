@@ -28,25 +28,20 @@
   height: 120px;
   border-radius: 4px;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &__image {
     fill: currentColor;
-    position: absolute;
-    left: 92px;
+    width: 70px;
+    height: 70px;
   }
 }
 
-@media screen and (min-width: 767px) {
-  .activities-icons__image {
-    position: absolute;
-    left: 44px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .activities-icons__image {
-    position: absolute;
-    left: 10px;
+@media screen and (max-width: 480px) {
+  .activities-icons {
+    width: 93vw;
   }
 }
 

@@ -101,6 +101,8 @@
   letter-spacing: 0.03em;
   text-decoration: none;
   color: $main-backgroundcolor;
+  text-align: center;
+  margin: 0;
 
   &::before {
     content: "Web";
@@ -171,5 +173,10 @@
 @media screen and (min-width: 1200px) {
   .newsletter-form {
     flex-direction: row;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo--footer {
+    text-align: start;
   }
 }

@@ -14,7 +14,9 @@
 
 .customers--grid .grid__item {
   flex-basis: calc((100% - 2 * 30px) / 2);
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (min-width: 1200px) {
@@ -27,24 +29,8 @@
 .customers-icons {
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  position: absolute;
-  left: 52px;
 
   &:hover {
     fill: $logo-color;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .customers-icons {
-    left: 126px;
-    top: 14px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .customers-icons {
-    position: absolute;
-    left: 32px;
   }
 }

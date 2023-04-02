@@ -52,3 +52,9 @@ p {
     width: 1200px;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .container {
+    width: 93vw;
+  }
+}
