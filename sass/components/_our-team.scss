@@ -12,19 +12,7 @@
 
 .section--our-team {
   background: #f5f4fa;
-  width: 480px;
-}
-
-@media screen and (min-width: 767px) {
-  .section--our-team {
-    width: 768px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .section--our-team {
-    width: 100%;
-  }
+  width: 100vw;
 }
 
 .team-member {
